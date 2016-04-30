@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PTABLE
 {
     class Program
-    {
+    {   
         static void Main(string[] args)
         {
         }
