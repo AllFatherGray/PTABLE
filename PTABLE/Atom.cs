@@ -47,7 +47,7 @@ namespace PTABLE
             return (int)protons - (int)electrons;
         }
 
-        public bool AddToShell(uint shellLayer , uint electrons = 1)
+        public bool AddToShell(uint shellLayer = 1, uint electrons = 1)
         {
             if (shellLayer == 0 || shellLayer > shells.Length) return false;
             if (shells[shellLayer-1] + electrons <= (2 * Math.Pow(shellLayer,2)))
