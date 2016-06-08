@@ -32,19 +32,19 @@ namespace PTABLE
         }
         public override string ToString()
         {
-            if ( Charge() > 0)
-                return name+"+" +Charge();//base.ToString();
-            else if (Charge() < 0)
-                return name + "-" + Charge();
+            if ( Charge > 0)
+                return name+"+" +Charge;//base.ToString();
+            else if (Charge < 0)
+                return name + "-" + Charge;
             else return name;
         }
         static public Atom operator+(Atom a, Atom b)//f(x)
        {
             return null;
        }
-        int Charge()
+        int Charge
         {
-            return (int)protons - (int)electrons;
+            get { return (int)protons - (int)electrons; }
         }
 
         public bool AddToShell(uint shellLayer = 1, uint electrons = 1)
